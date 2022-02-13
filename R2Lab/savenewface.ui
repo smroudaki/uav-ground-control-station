@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaveNewFace</class>
+ <widget class="QDialog" name="SaveNewFace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add New Face</string>
+  </property>
+  <widget class="QPushButton" name="btnSave">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>60</y>
+     <width>211</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover:!pressed  {
+ 	color: rgb(3, 81, 124);
+ }
+
+QPushButton#btnSave  { 
+	border-radius: 20px; 
+	background-color: #ccc; 
+	border: 1px solid rgb(2, 159, 139);
+	border-left: none;
+	border-right: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtImageName">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>351</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid rgb(2, 159, 139);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblHighV">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>90</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-style: italic;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txtImageName</tabstop>
+  <tabstop>btnSave</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
